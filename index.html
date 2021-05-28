@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  
+  <title>Frontend Mentor | [Mohamed hesham]</title>
+
+</head>
+<body>
+
+  <article>
+    <section class="container">
+      <h2>Our Pricing</h2>
+      <div class="switcher">
+        <span>Annually</span>
+        <div class="toggle" onclick="togglePrice();">
+          <span class="circle"></span>
+        </div>
+        <span>Monthly</span>
+      </div>
+
+      <div class="pricing">
+        <div class="basic">
+          <p class="head">Basic</p>
+          <p class="price">&dollar;<span class="monthly">19.99</span><span class="annually">199.99</span></p>
+          <p class="info">500 GB Storage</p>
+          <p class="info">2 Users Allowed</p>
+          <p class="info">Send up to 3 GB</p>
+          <button class="btn">Learn More</button>
+        </div>
+        <div class="professional">
+          <p class="head">Professional</p>
+          <p class="price">&dollar;<span class="monthly">24.99</span><span class="annually">249.99</span></p>
+          <p class="info">1 TB Storage</p>
+          <p class="info">5 Users Allowed</p>
+          <p class="info">Send up to 10 GB</p>
+          <button class="btn">Learn More</button>     
+        </div>
+        <div class="master">
+          <p class="head">Master</p>
+          <p class="price">&dollar;<span class="monthly">39.99</span><span class="annually">399.99</span></p>
+          <p class="info">2 TB Storage</p>
+          <p class="info">10 Users Allowed</p>
+          <p class="info">Send up to 20 GB</p>
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+    </section>
+  </article>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohamed Hesham</a>.
+  </div>
+
+  <script>
+          
+          function togglePrice() {
+            let toggleBtn = document.querySelector(".circle");
+            toggleBtn.classList.toggle("move");
+            showHide();
+          }
+
+          function showHide() {
+              let mon = document.querySelectorAll(".monthly"),
+                  ann = document.querySelectorAll(".annually");
+              
+              for (let i = 0; i < mon.length, i < ann.length; i+=1) {
+                const monEl = mon[i],
+                      annEl = ann[i];
+                monEl.classList.toggle("isHidden");
+                annEl.classList.toggle("isVisible");
+              }
+          }
+  </script>
+</body>
+</html>
