@@ -13,8 +13,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/html-and-cssflexbox-and-javascript-toggle-classes-933V8pjfR)
-- Live Site URL: [Add live site URL here](https://mohamedhesham221.github.io/pricing-component-with-toggle-master/)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/html-and-cssflexbox-and-javascript-toggle-classes-933V8pjfR)
+- Live Site URL: [live preview](https://mohamedhesham221.github.io/pricing-component-with-toggle-master/)
 
 ## My process
 
